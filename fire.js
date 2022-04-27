@@ -144,5 +144,7 @@ function windowResized(){
 }
 
 function play(){
-	document.getElementById("lied").play();
+	let audio = document.getElementById("lied");
+	audio.load();
+	audio.play();
 }
